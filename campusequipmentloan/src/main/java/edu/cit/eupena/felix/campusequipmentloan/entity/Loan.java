@@ -23,9 +23,9 @@ public class Loan {
     @Enumerated(EnumType.STRING)
     private LoanStatus status;
 
-    private BigDecimal penalty; // nullable
+    private BigDecimal penalty;
 
-    // getters & setters
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public Equipment getEquipment() { return equipment; }

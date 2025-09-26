@@ -13,13 +13,13 @@ public class UserService {
     }
 
     public User register(String username, String password) {
-        // Check if username already exists
+
         Optional<User> existingUser = userRepository.findByUsername(username);
         if (existingUser.isPresent()) {
             throw new RuntimeException("Username already taken!");
         }
 
-        User user = new User(username, password); // (⚠️ Hash password in real apps!)
+        User user = new User(username, password);
         return userRepository.save(user);
     }
 

@@ -15,7 +15,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    // ✅ Constructors, getters, setters
+
     public User() {}
 
     public User(String username, String password) {

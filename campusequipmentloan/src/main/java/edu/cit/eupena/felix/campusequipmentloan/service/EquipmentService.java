@@ -27,7 +27,7 @@ public class EquipmentService {
         return equipmentRepository.save(equipment);
     }
 
-    // ✅ Add this method
+
     public List<Equipment> findAll() {
         return equipmentRepository.findAll();
     }
